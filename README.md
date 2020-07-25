@@ -1,4 +1,3 @@
 # gettingandcleaningdataproject
 
-
-test
+Getting and Cleaning Data Course Project
