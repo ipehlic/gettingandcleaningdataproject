@@ -6,7 +6,7 @@ The data for the project:
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-The required filess: 
+The required files: 
 
 run_analysis.R - R script that performs the following data preparation steps: 
   1. Merges the training and the test sets to create one data set.
