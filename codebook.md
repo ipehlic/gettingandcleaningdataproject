@@ -1,6 +1,11 @@
 ---
 title: "Codebook"
 output:
+  pdf_document:
+    toc: yes
+    toc_depth: 4
+    latex_engine: xelatex
+    keep_md: true
   html_document:
     toc: yes
     toc_depth: 4
@@ -12,11 +17,7 @@ output:
     toc: yes
     toc_depth: '4'
     keep_md: true
-  pdf_document:
-    toc: yes
-    toc_depth: 4
-    latex_engine: xelatex
-    keep_md: true
+    self_contained: yes
 ---
 
 Here, we're just setting a few options.
@@ -207,48 +208,73 @@ The dataset has N=28 rows and 29 columns.
 
 
 
+\begin{table}
 
-<table class="kable_wrapper">
-<tbody>
-  <tr>
-   <td> 
-
-|x             |
-|:-------------|
-|session       |
-|created       |
-|modified      |
-|ended         |
-|expired       |
-|BFIK_open_2   |
-|BFIK_agree_4R |
-|BFIK_extra_2  |
-|BFIK_agree_1R |
-|BFIK_open_1   |
-|BFIK_neuro_2R |
-|BFIK_consc_3  |
-|BFIK_consc_4  |
-|BFIK_consc_2R |
-|BFIK_agree_3R |
-|BFIK_extra_3R |
-|BFIK_neuro_3  |
-|BFIK_neuro_4  |
-|BFIK_agree_2  |
-|BFIK_consc_1  |
-|BFIK_open_4   |
-|BFIK_extra_4  |
-|BFIK_extra_1R |
-|BFIK_open_3   |
-|BFIK_agree    |
-|BFIK_open     |
-|BFIK_consc    |
-|BFIK_extra    |
-|BFIK_neuro    |
-
- </td>
-  </tr>
-</tbody>
-</table>
+\centering
+\begin{tabular}[t]{l}
+\hline
+x\\
+\hline
+session\\
+\hline
+created\\
+\hline
+modified\\
+\hline
+ended\\
+\hline
+expired\\
+\hline
+BFIK\_open\_2\\
+\hline
+BFIK\_agree\_4R\\
+\hline
+BFIK\_extra\_2\\
+\hline
+BFIK\_agree\_1R\\
+\hline
+BFIK\_open\_1\\
+\hline
+BFIK\_neuro\_2R\\
+\hline
+BFIK\_consc\_3\\
+\hline
+BFIK\_consc\_4\\
+\hline
+BFIK\_consc\_2R\\
+\hline
+BFIK\_agree\_3R\\
+\hline
+BFIK\_extra\_3R\\
+\hline
+BFIK\_neuro\_3\\
+\hline
+BFIK\_neuro\_4\\
+\hline
+BFIK\_agree\_2\\
+\hline
+BFIK\_consc\_1\\
+\hline
+BFIK\_open\_4\\
+\hline
+BFIK\_extra\_4\\
+\hline
+BFIK\_extra\_1R\\
+\hline
+BFIK\_open\_3\\
+\hline
+BFIK\_agree\\
+\hline
+BFIK\_open\\
+\hline
+BFIK\_consc\\
+\hline
+BFIK\_extra\\
+\hline
+BFIK\_neuro\\
+\hline
+\end{tabular}
+\end{table}
 
 </details>
 
@@ -274,7 +300,7 @@ The first session started on 2016-07-08 03:54:16, the last session on 2016-11-02
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![Starting date times](codebook_files/figure-html/cb_codebook_data_overview__starting_time-1.png)
+![Starting date times](codebook_files/figure-latex/cb_codebook_data_overview__starting_time-1.pdf) 
 
 People took on average 127.36 minutes (median 1.48) to answer the survey.
 
@@ -286,7 +312,7 @@ People took on average 127.36 minutes (median 1.48) to answer the survey.
 ## Warning: Removed 2 rows containing missing values (geom_bar).
 ```
 
-![Duration people took for answering the survey](codebook_files/figure-html/cb_codebook_data_overview__duration-1.png)
+![Duration people took for answering the survey](codebook_files/figure-latex/cb_codebook_data_overview__duration-1.pdf) 
 
 
 #Variables
@@ -302,9 +328,9 @@ __Reliability__: Not computed.
 __Missing__: 0.
 
 
-![Likert plot of scale BFIK_agree items](codebook_files/figure-html/cb_codebook_data_BFIK_agree_likert-1.png)
+![Likert plot of scale BFIK_agree items](codebook_files/figure-latex/cb_codebook_data_BFIK_agree_likert-1.pdf) 
 
-![Distribution of scale BFIK_agree](codebook_files/figure-html/cb_codebook_data_BFIK_agree_distribution-1.png)
+![Distribution of scale BFIK_agree](codebook_files/figure-latex/cb_codebook_data_BFIK_agree_distribution-1.pdf) 
 
 #### Reliability details {#BFIK_agree_reliability}
 
@@ -336,9 +362,9 @@ __Reliability__: Not computed.
 __Missing__: 0.
 
 
-![Likert plot of scale BFIK_open items](codebook_files/figure-html/cb_codebook_data_BFIK_open_likert-16-1.png)
+![Likert plot of scale BFIK_open items](codebook_files/figure-latex/cb_codebook_data_BFIK_open_likert-16-1.pdf) 
 
-![Distribution of scale BFIK_open](codebook_files/figure-html/cb_codebook_data_BFIK_open_distribution-17-1.png)
+![Distribution of scale BFIK_open](codebook_files/figure-latex/cb_codebook_data_BFIK_open_distribution-17-1.pdf) 
 
 #### Reliability details {#BFIK_open_reliability}
 
@@ -370,9 +396,9 @@ __Reliability__: Not computed.
 __Missing__: 0.
 
 
-![Likert plot of scale BFIK_consc items](codebook_files/figure-html/cb_codebook_data_BFIK_consc_likert-22-1.png)
+![Likert plot of scale BFIK_consc items](codebook_files/figure-latex/cb_codebook_data_BFIK_consc_likert-22-1.pdf) 
 
-![Distribution of scale BFIK_consc](codebook_files/figure-html/cb_codebook_data_BFIK_consc_distribution-23-1.png)
+![Distribution of scale BFIK_consc](codebook_files/figure-latex/cb_codebook_data_BFIK_consc_distribution-23-1.pdf) 
 
 #### Reliability details {#BFIK_consc_reliability}
 
@@ -404,9 +430,9 @@ __Reliability__: Not computed.
 __Missing__: 0.
 
 
-![Likert plot of scale BFIK_extra items](codebook_files/figure-html/cb_codebook_data_BFIK_extra_likert-28-1.png)
+![Likert plot of scale BFIK_extra items](codebook_files/figure-latex/cb_codebook_data_BFIK_extra_likert-28-1.pdf) 
 
-![Distribution of scale BFIK_extra](codebook_files/figure-html/cb_codebook_data_BFIK_extra_distribution-29-1.png)
+![Distribution of scale BFIK_extra](codebook_files/figure-latex/cb_codebook_data_BFIK_extra_distribution-29-1.pdf) 
 
 #### Reliability details {#BFIK_extra_reliability}
 
@@ -438,9 +464,9 @@ __Reliability__: Not computed.
 __Missing__: 0.
 
 
-![Likert plot of scale BFIK_neuro items](codebook_files/figure-html/cb_codebook_data_BFIK_neuro_likert-34-1.png)
+![Likert plot of scale BFIK_neuro items](codebook_files/figure-latex/cb_codebook_data_BFIK_neuro_likert-34-1.pdf) 
 
-![Distribution of scale BFIK_neuro](codebook_files/figure-html/cb_codebook_data_BFIK_neuro_distribution-35-1.png)
+![Distribution of scale BFIK_neuro](codebook_files/figure-latex/cb_codebook_data_BFIK_neuro_distribution-35-1.pdf) 
 
 #### Reliability details {#BFIK_neuro_reliability}
 
@@ -457,11 +483,11 @@ __Missing__: 0.
 
 ## Missingness report
 
-<div data-pagedtable="false">
-  <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["description"],"name":[1],"type":["chr"],"align":["left"]},{"label":["expired"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["var_miss"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["n_miss"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"Missing values in 1 variables","2":"0","3":"1","4":"28"},{"1":"Missing values per variable","2":"28","3":"28","4":"28"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-</div>
+
+|description                   | expired| var_miss| n_miss|
+|:-----------------------------|-------:|--------:|------:|
+|Missing values in 1 variables |       0|        1|     28|
+|Missing values per variable   |      28|       28|     28|
 
 
 
