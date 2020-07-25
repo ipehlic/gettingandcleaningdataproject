@@ -15,7 +15,7 @@ run_analysis.R - R script that performs the following data preparation steps:
   4. Appropriately labels the data set with descriptive variable names.
   5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
   
-codebook.md - code book file that describes the variables and data
+codebook.md - code book file generated in R that describes the variables and data 
 
 TidyDataSet.txt - exported final tidy data set text file
   
